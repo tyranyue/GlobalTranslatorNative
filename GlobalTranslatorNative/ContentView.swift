@@ -1,9 +1,4 @@
-//
-//  ContentView.swift
-//  GlobalTranslatorNative
-//
-//  Created by 岳展辉 on 2026/1/2.
-//
+
 
 import SwiftUI
 
