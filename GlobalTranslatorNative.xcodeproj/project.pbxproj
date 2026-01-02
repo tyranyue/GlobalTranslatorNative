@@ -6,8 +6,45 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		91001F6C2F07CC2E008281E9 /* translator-daemon in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91001F5C2F07C4DC008281E9 /* translator-daemon */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91001F672F07CBD8008281E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91001F3F2F07C3F6008281E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91001F5B2F07C4DC008281E9;
+			remoteInfo = "translator-daemon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91001F5A2F07C4DC008281E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		91001F692F07CC07008281E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				91001F6C2F07CC2E008281E9 /* translator-daemon in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		91001F472F07C3F6008281E9 /* GlobalTranslatorNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalTranslatorNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91001F5C2F07C4DC008281E9 /* translator-daemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "translator-daemon"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +53,22 @@
 			path = GlobalTranslatorNative;
 			sourceTree = "<group>";
 		};
+		91001F5D2F07C4DC008281E9 /* translator-daemon */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "translator-daemon";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		91001F442F07C3F6008281E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91001F592F07C4DC008281E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				91001F492F07C3F6008281E9 /* GlobalTranslatorNative */,
+				91001F5D2F07C4DC008281E9 /* translator-daemon */,
 				91001F482F07C3F6008281E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				91001F472F07C3F6008281E9 /* GlobalTranslatorNative.app */,
+				91001F5C2F07C4DC008281E9 /* translator-daemon */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +106,12 @@
 				91001F432F07C3F6008281E9 /* Sources */,
 				91001F442F07C3F6008281E9 /* Frameworks */,
 				91001F452F07C3F6008281E9 /* Resources */,
+				91001F692F07CC07008281E9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				91001F682F07CBD8008281E9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				91001F492F07C3F6008281E9 /* GlobalTranslatorNative */,
@@ -69,6 +122,28 @@
 			productName = GlobalTranslatorNative;
 			productReference = 91001F472F07C3F6008281E9 /* GlobalTranslatorNative.app */;
 			productType = "com.apple.product-type.application";
+		};
+		91001F5B2F07C4DC008281E9 /* translator-daemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91001F602F07C4DC008281E9 /* Build configuration list for PBXNativeTarget "translator-daemon" */;
+			buildPhases = (
+				91001F582F07C4DC008281E9 /* Sources */,
+				91001F592F07C4DC008281E9 /* Frameworks */,
+				91001F5A2F07C4DC008281E9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				91001F5D2F07C4DC008281E9 /* translator-daemon */,
+			);
+			name = "translator-daemon";
+			packageProductDependencies = (
+			);
+			productName = "translator-daemon";
+			productReference = 91001F5C2F07C4DC008281E9 /* translator-daemon */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +156,9 @@
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					91001F462F07C3F6008281E9 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					91001F5B2F07C4DC008281E9 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -100,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				91001F462F07C3F6008281E9 /* GlobalTranslatorNative */,
+				91001F5B2F07C4DC008281E9 /* translator-daemon */,
 			);
 		};
 /* End PBXProject section */
@@ -122,7 +201,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91001F582F07C4DC008281E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91001F682F07CBD8008281E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91001F5B2F07C4DC008281E9 /* translator-daemon */;
+			targetProxy = 91001F672F07CBD8008281E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		91001F502F07C3F7008281E9 /* Debug */ = {
@@ -251,8 +345,19 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X5KLSKL38R;
 				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -281,8 +386,19 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X5KLSKL38R;
 				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -298,6 +414,30 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		91001F612F07C4DC008281E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5KLSKL38R;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		91001F622F07C4DC008281E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5KLSKL38R;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -320,6 +460,15 @@
 			buildConfigurations = (
 				91001F532F07C3F7008281E9 /* Debug */,
 				91001F542F07C3F7008281E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91001F602F07C4DC008281E9 /* Build configuration list for PBXNativeTarget "translator-daemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91001F612F07C4DC008281E9 /* Debug */,
+				91001F622F07C4DC008281E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
